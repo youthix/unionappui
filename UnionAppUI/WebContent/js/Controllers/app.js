@@ -1,5 +1,5 @@
 var app = angular.module('unionApp', ['ngRoute','ngTouch','ngResource','ngSanitize','ngLoadingSpinner','720kb.datepicker','file-model'
-]);
+,'ui.bootstrap']);
 
 
 app.config(['$routeProvider','$locationProvider','$httpProvider',function($routeProvider, $locationProvider, $httpProvider) {
