@@ -1,22 +1,232 @@
 [
   {
-    "key":"_Email_",
+    "key":"Email",
     "value":"E-mail"
   },
   {
-    "key":"_Password_",
+    "key":"Password",
     "value":"adgangskode"
   },
   {
-    "key":"_Reset_",
+    "key":"Reset",
     "value":"Nulstil"
   },
   {
-    "key":"_Login_",
+    "key":"Login",
     "value":"Log på"
   },
   {
-    "key":"_Forgot_Password_",
+    "key":"Forgot Password",
     "value": "Glemt kodeord"
-  }
+  },
+ {
+   "key": "Dashboard",
+   "value": "Oversigt"
+ },
+ {
+   "key": "Voting",
+   "value": "Afstemning"
+ },
+ {
+   "key": "Meeting",
+   "value": "Næste møde"
+ },
+ {
+   "key": "News letter",
+   "value": "Nyheds brev"
+ },
+ {
+   "key": "Activities",
+   "value": "Aktiviteter"
+ },
+ {
+   "key": "Contact list",
+   "value": "Kontakt liste"
+ },
+ {
+   "key": "Suggestions And Ideas",
+   "value": "Forslag og ide"
+ },
+ {
+   "key": "Summary",
+   "value": "Referat"
+ },
+ {
+   "key": "AMR",
+   "value": "AMR"
+ },
+ {
+   "key": "Local Agreements",
+   "value": "Lokal Aftaler"
+ },
+ {
+   "key": "Pay Rate",
+   "value": "Løn Sats"
+ },
+ {
+   "key": "Admin User",
+   "value": "Administrerer Bruger"
+ },
+ {
+   "key": "App Users",
+   "value": "Bruger Oversigt"
+ },
+ {
+   "key": "Space In Use",
+   "value": "Plads I Brug"
+ },
+ {
+   "key": "App Activities",
+   "value": "Apps Aktiviteter"
+ },
+ {
+   "key": "MON",
+   "value": "MANDAG"
+ },
+ {
+   "key": "TUE",
+   "value": "TIRSDAG"
+ },
+ {
+   "key": "WED",
+   "value": "ONSDAG"
+ },
+ {
+   "key": "THUR",
+   "value": "TORSDAG"
+ },
+ {
+   "key": "FRI",
+   "value": "FREDAG"
+ },
+ {
+   "key": "SAT",
+   "value": "LØRDAG"
+ },
+ {
+   "key": "SUN",
+   "value": "SØNDAG"
+ },
+ {
+   "key": "In use",
+   "value": "I brug"
+ },
+ {
+   "key": "Remaining",
+   "value": "Resterende"
+ },
+ {
+   "key": "Total",
+   "value": "Total"
+ },
+ {
+   "key": "Module",
+   "value": "Emne"
+ },
+ {
+   "key": "Subject",
+   "value": "Beskrivelse"
+ },
+ {
+   "key": "Action",
+   "value": "Handling"
+ },
+ {
+   "key": "Action By",
+   "value": "Tilføjet Af"
+ },
+ {
+   "key": "Date",
+   "value": "Dato"
+ },
+ {
+   "key": "Account Setting",
+   "value": "Konto Indstillinger"
+ },
+ {
+   "key": "Logout",
+   "value": "Logud"
+ },
+ {
+   "key": "New Users Waiting For Approval",
+   "value": "Ny Bruger Afventer På Godkendelse"
+ },
+ {
+   "key": "User Name",
+   "value": "Bruger Navn"
+ },
+ {
+   "key": "First Name",
+   "value": "Navn"
+ },
+ {
+   "key": "Last Name",
+   "value": "Efternavn"
+ },
+ {
+   "key": "Gender",
+   "value": "Køn"
+ },
+ {
+   "key": "Address",
+   "value": "Adresse"
+ },
+ {
+   "key": "City",
+   "value": "By"
+ },
+ {
+   "key": "Zip Code",
+   "value": "Post Nr."
+ },
+ {
+   "key": "Age",
+   "value": "Alder"
+ },
+ {
+   "key": "Tel Nr.",
+   "value": "Tlf.Nr."
+ },
+ {
+   "key": "Job Title",
+   "value": "Stilling"
+ },
+ {
+   "key": "Category",
+   "value": "Kategori"
+ },
+ {
+   "key": "Approve",
+   "value": "Godkendt"
+ },
+ {
+   "key": "Not Approve",
+   "value": "Ikke Godkendt"
+ },
+ {
+   "key": "Save",
+   "value": "Gem"
+ },
+ {
+   "key": "Cancel",
+   "value": "Annuller"
+ },
+ {
+   "key": "Male",
+   "value": "Han"
+ },
+ {
+   "key": "Female",
+   "value": "Kvinde"
+ },
+ {
+   "key": "Edit",
+   "value": "Redigere"
+ },
+ {
+   "key": "Profile",
+   "value": "Profil"
+ }
+
+
 ]
