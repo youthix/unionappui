@@ -39,9 +39,9 @@
             <!-- Dropdown User session -->
             <li class="dropdown"> <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa fa-user"></i></a>
                 <ul class="dropdown-menu animated half flipInX">
-                  <li><a href="" ng-click="detailAdmin()">Account Setting</a></li>
+                  <li><a href="" ng-click="detailAdmin()">{{'Account Setting' | i18n}}</a></li>
                   <li class="divider"></li>
-                  <li><a class="md-trigger" href="#fakelink">Logout</a></li>
+                  <li><a class="md-trigger" href="#fakelink">{{'Logout' |i18n}}</a></li>
                 </ul>
               </li>
             <!-- Notifications -->
@@ -71,21 +71,21 @@
       <div class="row">
         <div class="col-sm-8"> 
           <!-- Website statistic -->
-          <h2 class="dashboard-header">App Users</h2>
+          <h2 class="dashboard-header">{{'App Users'| i18n}}</h2>
           <canvas class="app-user-chart" id="appUsers"></canvas>
         </div>
         <div class="col-sm-4"> 
           <!-- Website statistic -->
-          <h2 class="dashboard-header">Space In Use</h2>
+          <h2 class="dashboard-header">{{'Space In Use'| i18n}}</h2>
           <canvas  class="used-space-chart" id="usedSpace"></canvas>
           <div class="doughnut-inner text-center">
             <p>{{spaceInfo.usedSpacePercent}}</p>
-            <span>In Use</span>
+            <span>{{'In use'| i18n }}</span>
           </div>
           <ul class="memory-statistics">
-            <li><p class="in-use-space">{{spaceInfo.usedspace}} {{spaceInfo.unit}}</p>In use</li>
-            <li><p class="remaining-space">{{spaceInfo.remspace}} {{spaceInfo.unit}}</p>Remaining</li>
-            <li><p class="total-space">{{spaceInfo.totalspace}} {{spaceInfo.unit}}</p>Total</li>
+            <li><p class="in-use-space">{{spaceInfo.usedspace}} {{spaceInfo.unit}}</p>{{'In use'| i18n }}</li>
+            <li><p class="remaining-space">{{spaceInfo.remspace}} {{spaceInfo.unit}}</p>{{'Remaining' |i18n}}</li>
+            <li><p class="total-space">{{spaceInfo.totalspace}} {{spaceInfo.unit}}</p>{{'Total' |i18n}}</li>
           </ul>
         </div>
       </div>
@@ -93,16 +93,16 @@
     <div class="box-info" ng-show="allActionLogs.length > 0">
       <div class="row">
         <div class="col-sm-12">
-          <h2 class="dashboard-header">App Activities</h2>
+          <h2 class="dashboard-header">{{'App Activities' | i18n}}</h2>
           <div class="table-responsive custom-table app-activity-table-header">
             <table class="table" data-sortable-initialized="true">
               <thead>
                 <tr>
-                  <th>Module</th>
-                  <th>Subject</th>
-                  <th>Action</th>
-                  <th>Action By</th>
-                  <th>Date</th>
+                  <th>{{'Module' | i18n}}</th>
+                  <th>{{'Subject' | i18n}}</th>
+                  <th>{{'Action' | i18n}}</th>
+                  <th>{{'Action By'|i18n}}</th>
+                  <th>{{'Date' | i18n}}</th>
                 </tr>
               </thead>
             </table>
@@ -129,7 +129,7 @@
       <div class="row">
         <div class="col-sm-12"> 
           <div class="box-info">
-            <h2>New Users Waiting For Approval</h2>
+            <h2>{{"New Users Waiting For Approval"|i18n}}</h2>
             
             <div class="table-responsive myprofile" ng-show="allPendingUsers.length > 0">
                <div ng-show="currUserIndex < allPendingUsers.length-1" ng-click="nextUser()" class="next-button">
@@ -148,54 +148,54 @@
 
                 <tbody>
                   <tr>
-                    <td>User Name</td>
+                    <td>{{'User Name'|i18n}}</td>
                     <td>{{allPendingUsers[currUserIndex].usNa}}</td>
                   </tr>
                   <tr>
-                    <td>First Name</td>
+                    <td>{{'First Name'|i18n}}</td>
                     <td>{{allPendingUsers[currUserIndex].fn}}</td>
                   </tr>
                   <tr>
-                    <td>Last Name</td>
+                    <td>{{"Last Name"|i18n}}</td>
                     <td>{{allPendingUsers[currUserIndex].ln}}</td>
                   </tr>
                   <tr>
-                    <td>Gender</td>
+                    <td>{{"Gender"|i18n}}</td>
                     <td>
-                      <span ng-show="allPendingUsers[currUserIndex].gen=='M'">Male</span>
-                      <span ng-show="allPendingUsers[currUserIndex].gen=='F'">Female</span>
+                      <span ng-show="allPendingUsers[currUserIndex].gen=='M'">{{"Male"|i18n}}</span>
+                      <span ng-show="allPendingUsers[currUserIndex].gen=='F'">{{"Female"|i18n}}</span>
                     </td>
                   </tr>
                   <tr>
-                    <td>Address</td>
+                    <td>{{"Address"|i18n}}</td>
                     <td>{{allPendingUsers[currUserIndex].add}}</td>
                   </tr>
                   <tr>
-                    <td>City</td>
+                    <td>{{"City"|i18n}}</td>
                     <td>{{allPendingUsers[currUserIndex].city}}</td>
                   </tr>
                   <tr>
-                    <td>Zip Code</td>
+                    <td>{{"Zip Code"|i18n}}</td>
                     <td>{{allPendingUsers[currUserIndex].zipcode}}</td>
                   </tr>
                   <tr>
-                    <td>Age</td>
+                    <td>{{"Age"|i18n}}</td>
                     <td>{{allPendingUsers[currUserIndex].age}}</td>
                   </tr>
                   <tr>
-                    <td>Tlf Nr.</td>
+                    <td>{{"Tel Nr."|i18n}}</td>
                     <td>{{allPendingUsers[currUserIndex].conNu}}</td>
                   </tr>
                   <tr>
-                    <td>Email</td>
+                    <td>{{"Email"|i18n}}</td>
                     <td>{{allPendingUsers[currUserIndex].emId}}</td>
                   </tr>
                   <tr>
-                    <td>Job Title</td>
+                    <td>{{"Job Title"|i18n}}</td>
                     <td>{{allPendingUsers[currUserIndex].title}}</td>
                   </tr>
                   <tr>
-                    <td>Category</td>
+                    <td>{{"Category"|i18n}}</td>
                     <td>
                       {{allPendingUsers[currUserIndex].category.catname}}
                     </td>
@@ -207,8 +207,8 @@
             <div class="col-md-12 spacer-20"></div>
             <div class="text-center actions">
               <div class="button-wrap">
-                <button type="button" class="btn btn-primary" ng-click="aprroveUser(allPendingUsers[currUserIndex])">Approve</button>
-                <button type="submit" class="btn btn-primary" ng-click="donotApproveUser(allPendingUsers[currUserIndex])">Not Approve</button>
+                <button type="button" class="btn btn-primary" ng-click="aprroveUser(allPendingUsers[currUserIndex])">{{"Approve"|i18n}}</button>
+                <button type="submit" class="btn btn-primary" ng-click="donotApproveUser(allPendingUsers[currUserIndex])">{{"Not Approve"|i18n}}</button>
               </div>
             </div>
           </div>

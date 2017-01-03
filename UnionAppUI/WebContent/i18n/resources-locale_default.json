@@ -1,23 +1,71 @@
 [
   {
-    "key":"_Email_",
+    "key":"Email",
     "value":"Email"
   },
   {
-    "key":"_Password_",
+    "key":"Password",
     "value":"Password"
   },
   {
-    "key":"_Reset_",
+    "key":"Reset",
     "value":"Reset App"
   },
   {
-    "key":"_Login_",
+    "key":"Login",
     "value":"Login"
   },
   {
-    "key":"_Forgot_Password_",
+    "key":"Forgot Password",
     "value":"Forgot Password"
-  }
+  },
+  {
+   "key": "Dashboard",
+   "value": "Dashboard"
+ },
+ {
+   "key": "Voting",
+   "value": "Voting"
+ },
+ {
+   "key": "Meeting",
+   "value": "Meeting"
+ },
+ {
+   "key": "News Letter",
+   "value": "News Letter"
+ },
+ {
+   "key": "Activities",
+   "value": "Activities"
+ },
+ {
+   "key": "Contact List",
+   "value": "Contact List "
+ },
+ {
+   "key": "Suggestions And Ideas",
+   "value": "Suggestions And Ideas"
+ },
+ {
+   "key": "Summary",
+   "value": "Summary"
+ },
+ {
+   "key": "AMR",
+   "value": "AMR"
+ },
+ {
+   "key": "Local Agreements",
+   "value": "Local Agreements"
+ },
+ {
+   "key": "Pay Rate",
+   "value": "Pay Rate"
+ },
+ {
+   "key": "Admin User",
+   "value": "Admin User"
+ }
 
 ]

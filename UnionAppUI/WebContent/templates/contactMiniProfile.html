@@ -76,7 +76,7 @@
       <!-- END NAVBAR CONTENT--> 
 	  
 	<div class="media user-field">
-          <div class="media-body welcome pull-left"> Profile
+          <div class="media-body welcome pull-left">{{"Profile"|i18n}}
           <!-- End div .media-body --> 
         </div>
         <!-- End div .media --> 
@@ -121,40 +121,40 @@
 				  </thead> -->
 				  <tbody>
 					 <tr>
-						<td>User Name</td>
+						<td>{{"User Name"|i18n}}</td>
 						<td><input type="text" ng-model="profileData.usNa" ng-disabled="disabled"></td>
 					 </tr>
 					 <tr>
-						<td>First Name</td>
+						<td>{{"First Name"|i18n}}</td>
 						<td><input type="text" ng-model="profileData.fn" ng-disabled="disabled"></td>
 					 </tr>
 					 <tr>
-						<td>Last Name</td>
+						<td>{{"Last Name"|i18n}}</td>
 						<td><input type="text" ng-model="profileData.ln" ng-disabled="disabled"></td>
 					 </tr>
 					 <tr>
-						<td>Gender</td>
+						<td>{{"Gender"|i18n}}</td>
 						<td>
                         	<select ng-model="profileData.gen" ng-disabled="disabled">
-                            <option value="M" ng-selected="profileData.gen=='M'">Male</option>
-                            <option value="F" ng-selected="profileData.gen=='F'">Female</option>
+                            <option value="M" ng-selected="profileData.gen=='M'">{{"Male"|i18n}}</option>
+                            <option value="F" ng-selected="profileData.gen=='F'">{{"Female"|i18n}}</option>
                             </select>
                         </td>
 					 </tr>
 					 <tr>
-						<td>Address</td>
+						<td>{{"Address"|i18n}}</td>
 						<td><input type="text" ng-model="profileData.add" ng-disabled="disabled"></td>
 					 </tr>
 					 <tr>
-						<td>City</td>
+						<td>{{"City"|i18n}}</td>
 						<td><input type="text" ng-model="profileData.city" ng-disabled="disabled"></td>
 					 </tr>
 					 <tr>
-						<td>Zip Code</td>
+						<td>{{"Zip Code"|i18n}}</td>
 						<td><input type="text" ng-model="profileData.zipcode" ng-disabled="disabled"></td>
 					 </tr>
 					 <tr>
-						<td>Age</td>
+						<td>{{"Age"|i18n}}</td>
 						<td><input type="text" ng-model="profileData.age" ng-disabled="disabled"></td>
 					 </tr>
 					 <!--<tr>
@@ -166,19 +166,19 @@
 						<td><input type="text" ng-model="profileData.usNa" ng-disabled="disabled"></td>
 					 </tr> -->
 					 <tr>
-						<td>Tlf Nr.</td>
-						<td><input type="text" ng-model="profileData.city" ng-disabled="disabled"></td>
+						<td>{{"Tel Nr."|i18n}}</td>
+						<td><input type="text" ng-model="profileData.conNu" ng-disabled="disabled"></td>
 					 </tr>
 					 <tr>
-						<td>Email</td>
+						<td>{{"Email"|i18n}}</td>
 						<td><input type="text" ng-model="profileData.emId" ng-disabled="disabled"></td>
 					 </tr>
                      <tr>
-						<td>Job Title</td>
+						<td>{{"Job Title"|i18n}}</td>
 						<td><input type="text" ng-model="profileData.title" ng-disabled="disabled"></td>
 					 </tr>
                      <tr>
-						<td>Category</td>
+						<td>{{"Category"|i18n}}</td>
 						<td>
                         	<select ng-model="profileData.category" ng-disabled="disabled">
                             <option value="{{cat.catname}}" ng-selected="profileData.category==cat.catname" ng-repeat="cat in ContactListCategory" >{{cat.catname}}</option>
@@ -203,9 +203,9 @@
 
         <div class="text-center actions">
           <div class="button-wrap">
-          <button type="button" class="btn btn-primary" ng-click="contactcancel(profileData.category)">Cancel</button>
-           <button type="submit" class="btn btn-default" ng-click="edit()" ng-show="showButton">Edit</button>
-           <button type="submit" class="btn btn-primary" ng-click="save(profileData)" ng-hide="showButton">Save</button>
+          <button type="button" class="btn btn-primary" ng-click="contactcancel(profileData.category)">{{"Cancel"|i18n}}</button>
+           <button type="submit" class="btn btn-default" ng-click="edit()" ng-show="showButton">{{"Edit"|i18n}}</button>
+           <button type="submit" class="btn btn-primary" ng-click="save(profileData)" ng-hide="showButton">{{"Save"|i18n}}</button>
         </div>
       </div>
           </div>
