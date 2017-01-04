@@ -193,7 +193,8 @@ app.config(['$routeProvider','$locationProvider','$httpProvider',function($route
                                            .when('/miniContactProfile',
                                       {
                                         controller:'miniContactController',
-                                        templateUrl:'templates/contactMiniProfile.html'
+                                        templateUrl:'templates/contactMiniProfile.html',
+                                        reloadOnSearch: false
 
                                       })
                                              .when('/adminUser',

@@ -4051,6 +4051,7 @@ a.btn.btn-default.add{
     top:65px;
 }
 .tooltip-delete{
+    cursor:pointer;
     color:#d9534f;
 }
 .tooltip-add{

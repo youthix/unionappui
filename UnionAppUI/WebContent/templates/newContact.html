@@ -89,15 +89,19 @@
 					 <tr>
 						<th>Name</th>
 						<th>Phone Number</th>
-						<th>Board Function</th>
+            <th>Board Function</th>
+						<th>Action</th>
 					 </tr>
 				  </thead>
 				  <tbody>
-					 <tr ng-repeat="eachContact in dataFromCategory" ng-click="detailContactListData(eachContact)">
-						<td>{{eachContact.usNa}}</td>
-						<td>{{eachContact.conNu}}</td>
-						<td>{{eachContact.fn}}</td>
-					 </tr>
+					 <tr ng-repeat="eachContact in dataFromCategory">
+						<td ng-click="detailContactListData(eachContact)">{{eachContact.usNa}}</td>
+						<td ng-click="detailContactListData(eachContact)">{{eachContact.conNu}}</td>
+            <td ng-click="detailContactListData(eachContact)">{{eachContact.fn}}</td>
+						<td class="actions smaller-td">
+              <i data-toggle="tooltip" ng-click="deleteContact(eachContact.emId,$index,$event)" class="fa fa-3x fa-minus-circle tooltip-delete" data-original-title="Delete Contact" title="Delete Contact"></i>
+            </td>
+           </tr>
 					<!--  <tr ng-click="detailContactListData()">
 						<td>Petr Hansen</td>
 						<td>3434343434</td>

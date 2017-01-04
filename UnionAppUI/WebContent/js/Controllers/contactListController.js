@@ -690,18 +690,20 @@ $scope.validateExtension=function(oForm) {
     
    $scope.edit = function(){
      $scope.showButton = false;
-
-      $scope.disabled = false;
-       $scope.showButtonFile = true;
-};
+     $scope.disabled = false;
+     $scope.showButtonFile = true;
+  };
 
 if($route.current.params.approveUser){
-      $scope.edit();
-    }
+    $scope.approveUser =true;
+    $location.search({approveUser:null})
+    $scope.edit();
+}
+
 $scope.contactcancel=function(cat){	
 	var catData ={"catname":cat};
 	dataSharingService.addEditData(catData);
-	if($rootScope.comingFromDashboard==true)
+	if($rootScope.comingFromDashboard==true || $scope.approveUser)
 	{$location.path('/dashBoard');}
 	else if(cat!=null && undefined !=cat && ''!=cat)
 	$location.path('/ContactListData');
@@ -758,10 +760,10 @@ $scope.save = function(){
                 "emId":  $scope.profileData.emId,
                 "role": $scope.profileData.role,
                 "category":$scope.profileData.category,
-                "title":$scope.profileData.title
+                "title":$scope.profileData.title,
+                "status":"a"
    }]}
 };
-             
 $scope.fetchAdminDetails=function(email){
 	var requestObject = {
             "bid": "123",
@@ -788,28 +790,33 @@ var catData ={"catname":$scope.profileData.category};
 
      services.updateProfile(requestObject).then( function(data){
                                                     
-                console.log("Data is:" + JSON.stringify(data));
-                var status = data.resStatus;
-                if (status.code == "00" &&  status.msg =="SUCCESS") {
-                $scope.dataFromCategory = data.userListObj.ul;                
-				dataSharingService.addEditData(catData);
-				 if($scope.uploadImageFlag==true){
-					  console.log("Uploading image");
-					  $scope.saveProfilePic(data);
-				 }
-				 else{
-					 if($rootScope.comingFromDashboard==true)
-						{
-							$scope.fetchAdminDetails(data.userListObj.ul[0].emId);
-							$location.path('/dashBoard');
-						}
-						else
-		               $location.path('/ContactList'); 
-				 }
-				                
-             }else{
-                alert("Service Error:"+ status.msg);
-            }
+          console.log("Data is:" + JSON.stringify(data));
+          var status = data.resStatus;
+          if (status.code == "00" &&  status.msg =="SUCCESS") {
+            $scope.dataFromCategory = data.userListObj.ul;                
+    				dataSharingService.addEditData(catData);
+            
+    				 if($scope.uploadImageFlag==true){
+    					  console.log("Uploading image");
+    					  $scope.saveProfilePic(data);
+    				 }
+    				 else{
+    					 if($rootScope.comingFromDashboard==true)
+    						{
+    							$scope.fetchAdminDetails(data.userListObj.ul[0].emId);
+    							$location.path('/dashBoard');
+    						}
+    						else if($scope.approveUser){
+                  $location.path('/dashBoard');
+                }
+                else{
+    		          $location.path('/ContactList'); 
+                }
+    				 }
+          				                
+          }else{
+            alert("Service Error:"+ status.msg);
+          }
         });
 
 };
@@ -917,6 +924,31 @@ $scope.addNewContact = function(){
      dataSharingService.addEditData(detailData);
       $location.path('/miniContactProfile');
 };
+$scope.deleteContact = function (email,contactIndex,$event) {
+  $ele = $($event.target);
+    $ele.tooltip("hide");
+  var requestObject = {
+    "bid": constant.bid,
+    "userListObj": {"ul": [   {
+      "usNa": email,
+      "status": "delete"
+    }]},
+    "criteria":{
+        "criteria": "TRUE",
+        "updateUserCriteriaObj": {
+          "name":"status"
+        }
+    }
+  };
+  services.updateStatus(requestObject).then(function(data) {
+      var status = data.resStatus;
+      if (status.code == "00" &&  status.msg =="SUCCESS") {
+        $scope.dataFromCategory.splice(contactIndex,1);
+      }else{
+        alert("Service :"+ status.msg);
+      }
+  });
+}
 
 
 }]); 

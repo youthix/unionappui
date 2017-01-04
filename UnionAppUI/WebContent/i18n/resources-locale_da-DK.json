@@ -1,22 +1,543 @@
 [
   {
-    "key":"_Email_",
+    "key":"Email",
     "value":"E-mail"
   },
   {
-    "key":"_Password_",
+    "key":"Password",
     "value":"adgangskode"
   },
   {
-    "key":"_Reset_",
+    "key":"Reset",
     "value":"Nulstil"
   },
   {
-    "key":"_Login_",
+    "key":"Login",
     "value":"Log på"
   },
   {
-    "key":"_Forgot_Password_",
+    "key":"Forgot Password",
     "value": "Glemt kodeord"
-  }
+  },
+ {
+   "key": "Dashboard",
+   "value": "Oversigt"
+ },
+ {
+   "key": "Voting",
+   "value": "Afstemning"
+ },
+ {
+   "key": "Meeting",
+   "value": "Næste møde"
+ },
+ {
+   "key": "News letter",
+   "value": "Nyheds brev"
+ },
+ {
+   "key": "Activities",
+   "value": "Aktiviteter"
+ },
+ {
+   "key": "Contact list",
+   "value": "Kontakt liste"
+ },
+ {
+   "key": "Suggestions And Ideas",
+   "value": "Forslag og ide"
+ },
+ {
+   "key": "Summary",
+   "value": "Referat"
+ },
+ {
+   "key": "AMR",
+   "value": "AMR"
+ },
+ {
+   "key": "Local Agreements",
+   "value": "Lokal Aftaler"
+ },
+ {
+   "key": "Pay Rate",
+   "value": "Løn Sats"
+ },
+ {
+   "key": "Admin User",
+   "value": "Administrerer Bruger"
+ },
+ {
+   "key": "App Users",
+   "value": "Bruger Oversigt"
+ },
+ {
+   "key": "Space In Use",
+   "value": "Plads I Brug"
+ },
+ {
+   "key": "App Activities",
+   "value": "Apps Aktiviteter"
+ },
+ {
+   "key": "MON",
+   "value": "MANDAG"
+ },
+ {
+   "key": "TUE",
+   "value": "TIRSDAG"
+ },
+ {
+   "key": "WED",
+   "value": "ONSDAG"
+ },
+ {
+   "key": "THUR",
+   "value": "TORSDAG"
+ },
+ {
+   "key": "FRI",
+   "value": "FREDAG"
+ },
+ {
+   "key": "SAT",
+   "value": "LØRDAG"
+ },
+ {
+   "key": "SUN",
+   "value": "SØNDAG"
+ },
+ {
+   "key": "In use",
+   "value": "I brug"
+ },
+ {
+   "key": "Remaining",
+   "value": "Resterende"
+ },
+ {
+   "key": "Total",
+   "value": "Total"
+ },
+ {
+   "key": "Module",
+   "value": "Emne"
+ },
+ {
+   "key": "Subject",
+   "value": "Beskrivelse"
+ },
+ {
+   "key": "Action",
+   "value": "Handling"
+ },
+ {
+   "key": "Action By",
+   "value": "Tilføjet Af"
+ },
+ {
+   "key": "Date",
+   "value": "Dato"
+ },
+ {
+   "key": "Account Setting",
+   "value": "Konto Indstillinger"
+ },
+ {
+   "key": "Logout",
+   "value": "Logud"
+ },
+ {
+   "key": "New Users Waiting For Approval",
+   "value": "Ny Bruger Afventer På Godkendelse"
+ },
+ {
+   "key": "User Name",
+   "value": "Bruger Navn"
+ },
+ {
+   "key": "First Name",
+   "value": "Navn"
+ },
+ {
+   "key": "Last Name",
+   "value": "Efternavn"
+ },
+ {
+   "key": "Gender",
+   "value": "Køn"
+ },
+ {
+   "key": "Address",
+   "value": "Adresse"
+ },
+ {
+   "key": "City",
+   "value": "By"
+ },
+ {
+   "key": "Zip Code",
+   "value": "Post Nr."
+ },
+ {
+   "key": "Age",
+   "value": "Alder"
+ },
+ {
+   "key": "Tel Nr.",
+   "value": "Tlf.Nr."
+ },
+ {
+   "key": "Job Title",
+   "value": "Stilling"
+ },
+ {
+   "key": "Category",
+   "value": "Kategori"
+ },
+ {
+   "key": "Approve",
+   "value": "Godkendt"
+ },
+ {
+   "key": "Not Approve",
+   "value": "Ikke Godkendt"
+ },
+ {
+   "key": "Save",
+   "value": "Gem"
+ },
+ {
+   "key": "Cancel",
+   "value": "Annuller"
+ },
+ {
+   "key": "Male",
+   "value": "Han"
+ },
+ {
+   "key": "Female",
+   "value": "Kvinde"
+ },
+ {
+   "key": "Edit",
+   "value": "Redigere"
+ },
+ {
+   "key": "Profile",
+   "value": "Profil"
+ },
+ {
+   "key": "Voting",
+   "value": "Afstemning "
+ },
+ {
+   "key": "Deadline",
+   "value": "Tidsfrist"
+ },
+ {
+   "key": "Subject",
+   "value": "Emne"
+ },
+ {
+   "key": "Actions",
+   "value": "Handling"
+ },
+ {
+   "key": "View Results",
+   "value": "Vis Resultater"
+ },
+ {
+   "key": "Survey Expired",
+   "value": "Valget Er Udløbet"
+ },
+ {
+   "key": "Add New Survey",
+   "value": "Tilføj Nyt Valg"
+ },
+ {
+   "key": "Questions Detail",
+   "value": "Detaljeret Resultat"
+ },
+ {
+   "key": "Result Deadline Survey Expired",
+   "value": "Afstemning Er Slut "
+ },
+ {
+   "key": "Details",
+   "value": "Detaljer"
+ },
+ {
+   "key": "Question",
+   "value": "Spørgsmål"
+ },
+ {
+   "key": "Option",
+   "value": "Valg Mulighed"
+ },
+ {
+   "key": "Back",
+   "value": "Tilbage"
+ },
+ {
+   "key": "Print",
+   "value": "Udskriv"
+ },
+ {
+   "key": "Survey",
+   "value": "Afstemning "
+ },
+ {
+   "key": "Start Date",
+   "value": "Start Dato"
+ },
+ {
+   "key": "End Date",
+   "value": "Slut Dato"
+ },
+ {
+   "key": "Start Time",
+   "value": "Start Tid"
+ },
+ {
+   "key": "End Time",
+   "value": "Slut Tid"
+ },
+ {
+   "key": "Subject",
+   "value": "Emne"
+ },
+ {
+   "key": "Description",
+   "value": "Beskrivelse "
+ },
+ {
+   "key": "Update",
+   "value": "Opdatere "
+ },
+ {
+   "key": "Cancel",
+   "value": "Annullere"
+ },
+ {
+   "key": "Add Questions",
+   "value": "Tilføj Nyt Spørgsmål "
+ },
+ {
+   "key": "Back",
+   "value": "Tilbage"
+ },
+ {
+   "key": "Next Meeting",
+   "value": "Næste Møde"
+ },
+ {
+   "key": "Date",
+   "value": "Dato"
+ },
+ {
+   "key": "Time",
+   "value": "Tid"
+ },
+ {
+   "key": "Place",
+   "value": "Sted"
+ },
+ {
+   "key": "Comming",
+   "value": "Kommer"
+ },
+ {
+   "key": "Not Comming",
+   "value": "Kommer Ikke"
+ },
+ {
+   "key": "Did Not Answer",
+   "value": "Har Ikke Svaret "
+ },
+ {
+   "key": "Actions",
+   "value": "Handling "
+ },
+ {
+   "key": "Ad New Meeting",
+   "value": "Tilføj Nyt Møde"
+ },
+ {
+   "key": "Subject",
+   "value": "Emne"
+ },
+ {
+   "key": "Description",
+   "value": "Beskrivelse"
+ },
+ {
+   "key": "Save Meeting",
+   "value": "Gem Mødet "
+ },
+ {
+   "key": "Cancel",
+   "value": "Annullere"
+ },
+ {
+   "key": "DD-MM-YYYY",
+   "value": "DD-MM-ÅÅÅÅ"
+ },
+ {
+   "key": "Save",
+   "value": "Gem"
+ },
+  {
+   "key": "News Letter",
+   "value": "Nyheds Brev"
+ },
+ {
+   "key": "Date",
+   "value": "Dato"
+ },
+ {
+   "key": "Subject",
+   "value": "Emne"
+ },
+ {
+   "key": "Actions",
+   "value": "Handling"
+ },
+ {
+   "key": "Create News Letter",
+   "value": "Oprette Et Nyt Nyheds Brev"
+ },
+ {
+   "key": "New Activity",
+   "value": "Ny Aktivitet"
+ },
+ {
+   "key": "Add New Activity",
+   "value": "Tilføj Nyt Aktivitet "
+ },
+ {
+   "key": "Time",
+   "value": "Tid"
+ },
+ {
+   "key": "Place",
+   "value": "Sted"
+ },
+ {
+   "key": "Description",
+   "value": "Beskrivelse"
+ },
+ {
+   "key": "Save Activity",
+   "value": "Gem"
+ },
+ {
+   "key": "Contact List",
+   "value": "Kontakt Liste"
+ },
+ {
+   "key": "Add New Category",
+   "value": "Tilføj Et Nyt Kategori"
+ },
+ {
+   "key": "Name",
+   "value": "Navn"
+ },
+ {
+   "key": "Phone Number",
+   "value": "TLF.NR."
+ },
+ {
+   "key": "Board Function",
+   "value": "Bestyrelses Funktion"
+ },
+ {
+   "key": "Category Name",
+   "value": "Kategori"
+ },
+ {
+   "key": "Save Category",
+   "value": "Gem"
+ },
+ {
+   "key": "Profil",
+   "value": "Profil"
+ },
+ {
+   "key": "Suggestions And Ideas",
+   "value": "Forslag Og Ideer"
+ },
+ {
+   "key": "Date",
+   "value": "Dato"
+ },
+ {
+   "key": "Actions",
+   "value": "Handling "
+ },
+ {
+   "key": "Cresta Suggestions And Ideas",
+   "value": "Opart Nyt"
+ },
+ {
+   "key": "Deskription",
+   "value": "Beskrivelse"
+ },
+ {
+   "key": "Summary",
+   "value": "Referat"
+ },
+ {
+   "key": "Subject",
+   "value": "Emne"
+ },
+ {
+   "key": "Actions",
+   "value": "Actions"
+ },
+ {
+   "key": "Create Summary",
+   "value": "Opret Nyt"
+ },
+ {
+   "key": "Create Amr",
+   "value": "Opret Nyt"
+ },
+ {
+   "key": "Amr List",
+   "value": "Amr Liste "
+ },
+ {
+   "key": "Edit Amr",
+   "value": "Redigere "
+ },
+ {
+   "key": "Local Agreements",
+   "value": "Lokale Aftaler "
+ },
+ {
+   "key": "Pay Rate",
+   "value": "Løn Sats"
+ },
+ {
+   "key": "Admin User",
+   "value": "Administrator Bruger"
+ },
+ {
+   "key": "Name",
+   "value": "Navn"
+ },
+ {
+   "key": "Role",
+   "value": "Rolle"
+ },
+ {
+   "key": "Phone Number",
+   "value": "Tlf.Nr."
+ },
+ {
+   "key": "Board Function",
+   "value": "Funktion"
+ }
+
 ]

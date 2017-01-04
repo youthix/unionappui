@@ -10,20 +10,20 @@
         <form role="form" name="loginForm">
           <div class="form-group login-input"> <i class="fa fa-user overlay"></i>
             <input type="email" class="form-control text-input" ng-model="user.Username" 
-            ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/"  data-i18n-attr = "_Email_ | placeholder" required>
+            ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/"  data-i18n-attr = "Email | placeholder" required>
           </div>
           <div class="form-group login-input"> <i class="fa fa-key overlay"></i>
-            <input type="password" class="form-control text-input" ng-model="user.Password" data-i18n-attr = "_Password_ | placeholder" required>
+            <input type="password" class="form-control text-input" ng-model="user.Password" data-i18n-attr = "Password | placeholder" required>
           </div>
 		  
           <div class="text-center">
 		  <br/>
-		  <a  ng-click="forgotPassword()">{{ "_Forgot_Password_" | i18n }}?</a> <br><br> <a  ng-click="openResetPasswordModal(resetPassword)">{{"_Reset_"|i18n}} {{"_Password_"|i18n}}</a>
+		  <a  ng-click="forgotPassword()">{{ "Forgot Password" | i18n }}?</a> <br><br> <a  ng-click="openResetPasswordModal(resetPassword)">{{"Reset"|i18n}} {{"Password"|i18n}}</a>
 		  <br/><br/>
           </div>
           <div class="row">
             <div class="col-sm-12">
-              <button type="submit" ng-disabled="loginForm.$invalid" ng-click="login(user)" class="btn btn-success btn-block">{{"_Login_" | i18n}}</button>
+              <button type="submit" ng-disabled="loginForm.$invalid" ng-click="login(user)" class="btn btn-success btn-block">{{"Login" | i18n}}</button>
             </div>
           </div>
 		  <h6 class="text-center"><br/>{{fotterTitle}}</h6>
