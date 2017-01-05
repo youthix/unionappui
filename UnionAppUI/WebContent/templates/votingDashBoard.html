@@ -39,9 +39,9 @@
               <!-- Dropdown User session -->
               <li class="dropdown"> <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa fa-user"></i></a>
                 <ul class="dropdown-menu animated half flipInX">
-                  <li><a href="" ng-click="detailAdmin()">Account Setting</a></li>
+                  <li><a href="" ng-click="detailAdmin()">{{'Account Setting' | i18n}}</a></li>
                   <li class="divider"></li>
-                  <li><a class="md-trigger" href="#fakelink">Logout</a></li>
+                  <li><a class="md-trigger" href="#fakelink">{{'Logout' |i18n}}</a></li>
                 </ul>
               </li>
               <!-- End Dropdown User session -->			
@@ -59,7 +59,7 @@
       <!-- END NAVBAR CONTENT--> 
 	  
 	<div class="media user-field">
-          <div class="media-body welcome pull-left"> Voting</div>
+          <div class="media-body welcome pull-left">{{"Voting"|i18n}}</div>
         <!-- End div .media --> 
         
 	</div>
@@ -81,20 +81,20 @@
          <table data-sortable="" class="table survey-list-table" data-sortable-initialized="true">
           <thead ng-click="viewSurvey($index)">
            <tr>           
-            <th>Deadline</th> 
-            <th>Subject</th>           
-            <th>Actions</th>
-            <th><span  ng-show="survey.status==='online' || (survey.deadlineDays < 0 && survey.deadlineHours < 0)">View Results</span></th>
+            <th>{{"Deadline"|i18n}}</th> 
+            <th>{{"Subject"|i18n}}</th>           
+            <th>{{"Actions"|i18n}}</th>
+            <th><span  ng-show="survey.status==='online' || (survey.deadlineDays < 0 && survey.deadlineHours < 0)">{{"View Results"|i18n}}</span></th>
            </tr>
           </thead>
           <tbody>
            <tr>              
              <td class="smaller-td">
               <div ng-show="survey.deadlineDays > 0 || survey.deadlineHours > 0">
-                <span ng-show="survey.deadlineDays > 0">{{survey.deadlineDays}} Days</span>&nbsp;<span ng-show="survey.deadlineHours">{{survey.deadlineHours}} Hours</span> 
+                <span ng-show="survey.deadlineDays > 0">{{survey.deadlineDays}} {{"Days"|i18n}}</span>&nbsp;<span ng-show="survey.deadlineHours">{{survey.deadlineHours}} {{"Hours"|i18n}}</span> 
               </div>
               <div ng-show="survey.deadlineDays < 0 && survey.deadlineHours < 0">
-                Survey Expired
+                {{"Survey Expired"|i18n}}
               </div>
               </td>
              <td class="large-td">{{survey.subject}}</td>
@@ -118,7 +118,7 @@
 			
 			
 			<div class="text-center">
-				<button type="button" class="btn btn-wfs" ng-click="addNewSurvey()"><i class="fa fa-plus"></i>Add New Survey</button>
+				<button type="button" class="btn btn-wfs" ng-click="addNewSurvey()"><i class="fa fa-plus"></i>{{"Add New Survey"|i18n}}</button>
 			</div>
           </div>
           <!-- End div .box-info --> 

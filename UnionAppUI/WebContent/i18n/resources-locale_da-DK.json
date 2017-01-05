@@ -40,6 +40,26 @@
    "value": "Aktiviteter"
  },
  {
+   "key": "New",
+   "value": "Ny"
+ },
+ {
+   "key": "Days",
+   "value": "Dage"
+ },
+ {
+   "key": "Hours",
+   "value": "Timer"
+ },
+ {
+   "key": "Result",
+   "value": "Resultat"
+ },
+ {
+   "key": "Completed",
+   "value": "Afsluttet"
+ },
+ {
    "key": "Contact list",
    "value": "Kontakt liste"
  },
@@ -244,6 +264,10 @@
    "value": "Handling"
  },
  {
+   "key": "View Questions",
+   "value": "Vis spørgsmål"
+ },
+ {
    "key": "View Results",
    "value": "Vis Resultater"
  },
@@ -254,6 +278,10 @@
  {
    "key": "Add New Survey",
    "value": "Tilføj Nyt Valg"
+ },
+ {
+   "key":"Not a valid time!",
+   "value":"Ikke et gyldigt tid!"
  },
  {
    "key": "Questions Detail",
@@ -269,6 +297,10 @@
  },
  {
    "key": "Question",
+   "value": "Spørgsmål"
+ },
+ {
+   "key": "Questions",
    "value": "Spørgsmål"
  },
  {
@@ -321,7 +353,7 @@
  },
  {
    "key": "Add Questions",
-   "value": "Tilføj Nyt Spørgsmål "
+   "value": "Tilføj Nyt Spørgsmål"
  },
  {
    "key": "Back",
@@ -360,7 +392,7 @@
    "value": "Handling "
  },
  {
-   "key": "Ad New Meeting",
+   "key": "Add New Meeting",
    "value": "Tilføj Nyt Møde"
  },
  {
@@ -537,7 +569,7 @@
  },
  {
    "key": "Board Function",
-   "value": "Bestyrelses Funktion"
+   "value": "Funktion"
  }
 
 ]

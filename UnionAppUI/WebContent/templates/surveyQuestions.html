@@ -42,9 +42,9 @@
       <!-- Dropdown User session -->
       <li class="dropdown"> <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa fa-user"></i></a>
         <ul class="dropdown-menu animated half flipInX">
-          <li><a href="" ng-click="detailAdmin()">Account Setting</a></li>
+          <li><a href="" ng-click="detailAdmin()">{{'Account Setting' | i18n}}</a></li>
           <li class="divider"></li>
-          <li><a class="md-trigger" href="#fakelink">Logout</a></li>
+          <li><a class="md-trigger" href="#fakelink">{{'Logout' |i18n}}</a></li>
         </ul>
       </li>
       <!-- End Dropdown User session -->			
@@ -62,7 +62,7 @@
 <!-- END NAVBAR CONTENT--> 
 
 <div class="media user-field">
-  <div class="media-body welcome pull-left">{{surveyData.subject}} Questions
+  <div class="media-body welcome pull-left">{{surveyData.subject}} {{"Questions"|i18n}}
     <!-- End div .media-body --> 
   </div>
   <!-- End div .media --> 
@@ -84,7 +84,7 @@
         <div style="width:100%; height:auto;">
           <div class="questions-table" ng-repeat="question in questionList  track by $index">
             <div class="questions-table-row">
-              <div class="questions-table-cell questions-label"><span>Question {{$index+1}}</span></div>
+              <div class="questions-table-cell questions-label"><span>{{"Question"|i18n}} {{$index+1}}</span></div>
               <div class="questions-table-cell questions-detail">
                 <textarea rows="3" class="form-control" placeholder="Description" ng-disabled="viewSurvey" ng-model="question.detail"></textarea>
               </div>
@@ -96,7 +96,7 @@
             <div class="questions-table-row">
               <div class="questions-table-cell">&nbsp;</div>
               <div class="options-table" ng-repeat="option in question.optiondtoLs track by $index">
-                <div class="options-table-cell options-label">Option {{$index+1}}</div>
+                <div class="options-table-cell options-label">{{"Option"|i18n}} {{$index+1}}</div>
                 <div class="options-table-cell">
                   <textarea class="form-control" placeholder="Description" ng-disabled="viewSurvey" ng-model="option.detail"></textarea>
                 </div>
@@ -109,15 +109,15 @@
           <div class="text-center actions">
             <div class="button-wrap" ng-hide="viewSurvey">
               <div style="width:10%;float:left;">&nbsp;</div>
-              <button type="submit" class="btn btn-default" ng-disabled="myForm.$invalid || myForm.input.$error" ng-click="saveUpdate(survey)"><span ng-show="editSurvey">Update</span><span ng-show="addNewSurvey">Save</span></button>
-              <button type="submit" class="btn btn-primary" ng-click="cancel()" ng-show="addNewSurvey">Cancel</button>
-              <button type="submit" class="btn btn-primary" ng-click="back()" ng-show="editSurvey">Back</button>
-              <div class="add-questions-btn">Add Questions<br/>
+              <button type="submit" class="btn btn-default" ng-disabled="myForm.$invalid || myForm.input.$error" ng-click="saveUpdate(survey)"><span ng-show="editSurvey">{{"Update"|i18n}}</span><span ng-show="addNewSurvey">{{"Save"|i18n}}</span></button>
+              <button type="submit" class="btn btn-primary" ng-click="cancel()" ng-show="addNewSurvey">{{"Cancel"|i18n}}</button>
+              <button type="submit" class="btn btn-primary" ng-click="back()" ng-show="editSurvey">{{"Back"|i18n}}</button>
+              <div class="add-questions-btn">{{"Add Questions"|i18n}}<br/>
                 <div class="btn-questions" ng-click="addQuestion()"><i class="fa fa-3x fa-plus-circle"></i></div>
               </div>
             </div>
             <div class="button-wrap" ng-show="viewSurvey">
-              <button type="submit" class="btn btn-primary" ng-click="back()">Back</button>
+              <button type="submit" class="btn btn-primary" ng-click="back()">{{"Back"|i18n}}</button>
             </div>
           </div>
         </div>

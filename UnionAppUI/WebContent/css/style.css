@@ -3976,7 +3976,7 @@ input[type="text"][disabled="disabled"]{cursor:not-allowed; background-color:#f9
     text-align: center;
 }
 .questions-label, .questions-action, .options-label, .options-action{
-    width:10%;
+    width:12%;
 }
 .questions-detail{
     width:80%;

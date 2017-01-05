@@ -42,9 +42,9 @@
       <!-- Dropdown User session -->
       <li class="dropdown"> <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa fa-user"></i></a>
         <ul class="dropdown-menu animated half flipInX">
-          <li><a href="" ng-click="detailAdmin()">Account Setting</a></li>
+          <li><a href="" ng-click="detailAdmin()">{{'Account Setting' | i18n}}</a></li>
           <li class="divider"></li>
-          <li><a class="md-trigger" href="#fakelink">Logout</a></li>
+          <li><a class="md-trigger" href="#fakelink">{{'Logout' |i18n}}</a></li>
         </ul>
       </li>
       <!-- End Dropdown User session -->			
@@ -62,7 +62,7 @@
 <!-- END NAVBAR CONTENT--> 
 
 <div class="media user-field">
-  <div class="media-body welcome pull-left">{{surveyData.subject}} Questions Detail
+  <div class="media-body welcome pull-left">{{surveyData.subject}} {{"Questions Detail"|i18n}}
     <!-- End div .media-body --> 
   </div>
   <!-- End div .media --> 
@@ -80,13 +80,13 @@
         
     <div class="row" ng-hide = "details">
       <div class="survey-results">
-        <p>Result</p>
-        <p>Deadline</p>
+        <p>{{"Result"|i18n}}</p>
+        <p>{{"Deadline"|i18n}}</p>
         <p ng-show="surveyData.deadlineDays > 0 || surveyData.deadlineHours > 0">
-          <span ng-show="surveyData.deadlineDays > 0">{{surveyData.deadlineDays}} Days</span>&nbsp;<span ng-show="surveyData.deadlineHours">{{surveyData.deadlineHours}} Hours</span> 
+          <span ng-show="surveyData.deadlineDays > 0">{{surveyData.deadlineDays}} {{"Days"|i18n}}</span>&nbsp;<span ng-show="surveyData.deadlineHours">{{surveyData.deadlineHours}} {{"Hours"|i18n}}</span> 
         </p>
         <p ng-show="surveyData.deadlineDays < 0 && surveyData.deadlineHours < 0">
-          Survey Expired
+          {{"Survey Expired"|i18n}}
         </p>
         <div class="survey-results-chart-wrapper">
           <canvas class="survey-results-chart" id="surveyResults"></canvas>
@@ -95,7 +95,7 @@
           </div>
         </div>
         <div class="response-count" ng-hide="surveyData.deadlineDays < 0 && surveyData.deadlineHours < 0">
-          Completed<br>{{responsePercent}}%
+          {{"Completed"|i18n}}<br>{{responsePercent}}%
         </div>
       </div>
     </div>
@@ -105,7 +105,7 @@
         <div style="width:100%; height:auto;">
           <div class="questions-table" ng-repeat="question in questionList  track by $index">
             <div class="questions-table-row">
-              <div class="questions-table-cell questions-label"><span>Question {{$index+1}}</span></div>
+              <div class="questions-table-cell questions-label"><span>{{"Question"|i18n}} {{$index+1}}</span></div>
               <div class="questions-table-cell questions-detail">
                 <div class="form-control questions-result">{{question.detail}}</div>
               </div>
@@ -113,7 +113,7 @@
             <div class="questions-table-row">
               <div class="questions-table-cell">&nbsp;</div>
               <div class="options-table" ng-repeat="option in question.optiondtoLs track by $index">
-                <div class="options-table-cell options-label">Option {{$index+1}}</div>
+                <div class="options-table-cell options-label">{{"Option"|i18n}} {{$index+1}}</div>
                 <div class="options-table-cell">
                   <div class="form-control option-result">{{option.detail}}</div>
                 </div>
@@ -134,8 +134,8 @@
   <div class="row">
     <div class="text-center actions">
       <div class="button-wrap">
-        <button type="submit" ng-hide = "details" ng-disabled="surveyData.deadlineDays > 0 && surveyData.deadlineHours > 0" class="btn btn-primary" ng-click="showDetails()">Details</button>
-        <button type="submit" ng-show = "details" ng-disabled="surveyData.deadlineDays > 0 && surveyData.deadlineHours > 0" class="btn btn-primary" ng-click="back()">Back</button>
+        <button type="submit" ng-hide = "details" ng-disabled="surveyData.deadlineDays > 0 && surveyData.deadlineHours > 0" class="btn btn-primary" ng-click="showDetails()">{{"Details"|i18n}}</button>
+        <button type="submit" ng-show = "details" ng-disabled="surveyData.deadlineDays > 0 && surveyData.deadlineHours > 0" class="btn btn-primary" ng-click="back()">{{"Back"|i18n}}</button>
       </div>
     </div>
   </div>
