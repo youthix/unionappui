@@ -106,6 +106,7 @@ app.controller('loginController',['$scope','localize','$location','services','co
         
         var loginUserData = {
             "bid": constant.bid,
+            "channel":"admin",
             "userListObj": {
                 "ul": [
                     {
@@ -123,7 +124,7 @@ app.controller('loginController',['$scope','localize','$location','services','co
              var status = data.resStatus;
              if (status.code == "00" &&  status.msg =="SUCCESS") {    
             	 var img=data.userListObj.ul[0].imageurl;
-                   $rootScope.userName = data.userListObj.ul[0].fn+" "+data.userListObj.ul[0].fn;
+                   $rootScope.userName = data.userListObj.ul[0].fn+" "+data.userListObj.ul[0].ln;
                    $rootScope.adminDetails=data.userListObj.ul[0];
                    if(null != img && undefined != img && ""!=img)
                    $rootScope.userImage=data.userListObj.ul[0].imageurl;

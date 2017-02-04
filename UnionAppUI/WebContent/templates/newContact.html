@@ -83,7 +83,7 @@
           <!-- Website statistic -->
           <div class="box-info">
 			<div class="col-md-9 table-responsive custom-table">
-			<div class="header">{{category}} {{"Board"|i18n}}</div>
+			<div class="header">{{category}}</div>
 			   <table data-sortable="" class="table" data-sortable-initialized="true">
 				  <thead>
 					 <tr>
@@ -95,9 +95,9 @@
 				  </thead>
 				  <tbody>
 					 <tr ng-repeat="eachContact in dataFromCategory">
-						<td ng-click="detailContactListData(eachContact)">{{eachContact.usNa}}</td>
-						<td ng-click="detailContactListData(eachContact)">{{eachContact.conNu}}</td>
-            <td ng-click="detailContactListData(eachContact)">{{eachContact.fn}}</td>
+						<td class="cursor-pointer" ng-click="detailContactListData(eachContact)">{{eachContact.usNa}}</td>
+						<td class="cursor-pointer" ng-click="detailContactListData(eachContact)">{{eachContact.conNu}}</td>
+            <td class="cursor-pointer" ng-click="detailContactListData(eachContact)">{{eachContact.fn}}</td>
 						<td class="actions smaller-td">
               <a data-toggle="tooltip" ng-click="deleteContact(eachContact.emId,$index,$event)"  class="btn btn-default delete" data-original-title="{{'Delete Contact'|i18n}}" title="{{'Delete Contact'|i18n}}"><i class="fa fa-minus" ng-click="deleteContact(eachContact.emId,$index,$event)"></i></a>
             </td>

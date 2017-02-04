@@ -87,7 +87,7 @@
 				  <thead>
 					 <tr>
 						<th ng-click="sortBy('fn')">{{'Name'| i18n }} <span class="sortorder" ng-show="propertyName==='fn'" ng-class="{reverse: reverse}"></span></th>
-						<th ng-click="sortBy('role')">{{'Role'| i18n }} <span class="sortorder" ng-show="propertyName==='role'" ng-class="{reverse: reverse}"></span></th>
+						<th ng-click="sortBy('role')">{{'Actions'| i18n }} <span class="sortorder" ng-show="propertyName==='role'" ng-class="{reverse: reverse}"></span></th>
 						<th>{{'Phone Number'| i18n }} </th>
 						<th ng-click="sortBy('title')">{{'Board Function'| i18n }} <span class="sortorder" ng-show="propertyName==='title'" ng-class="{reverse: reverse}"></th>
 					 </tr>
@@ -97,7 +97,7 @@
 						<td>{{user.fn}} {{user.ln}}</td>
             <td class="actions adminuser">
               <a ng-click="open(user)" ng-if="user.role === 'N'" data-toggle="tooltip" title="" class="btn btn-default offline deleted" data-original-title="{{'Normal'| i18n }}"><i class="fa"></i></a>
-              <a ng-click="open(user)" ng-if="user.role === 'A' || user.role === 'S'"data-toggle="tooltip" title="" class="btn btn-default live online" data-original-title="{{'Admin'| i18n }}"><i class="fa"></i></a>
+              <a ng-click="open(user)" ng-if="user.role === 'A' || user.role === 'S'" data-toggle="tooltip" title="" class="btn btn-default live online" data-original-title="{{'Admin'| i18n }}"><i class="fa"></i></a>
             </td>
             <td>{{user.conNu}}</td>
             <td>{{user.title}}</td>
@@ -139,7 +139,7 @@
             <h3 class="modal-title">{{"Change User Role"|i18n}}</h3>
         </div>
         <div class="modal-body">
-            <span>{{"Are you sure you want to convert"|i18n}} "{{item.fn}} {{item.ln}}" {{"from"|i18n}} <span ng-if="item.role=='N'">{{"Normal"|i18n}}</span> <span ng-if="item.role=='A' || item.role=='S'">{{"Admin"|i18n}}</span> {{"Role"|i18n}} {{"to"|i18n}} <span ng-if="item.role=='A' || item.role=='S'">{{"Normal"|i18n}}</span> <span ng-if="item.role=='N'">{{"Admin"|i18n}}</span> {{"Role"|i18n}}</span>
+            <span>{{"Are you sure you want to"|i18n}} <span ng-if="item.role=='N'">{{"give"|i18n}} {{item.fn}} {{item.ln}} </span><span ng-if="item.role=='A' || item.role=='S'">{{"remove"|i18n}} {{item.fn}} {{item.ln}}´s </span>{{"administrator access?"|i18n}}</span>
         </div>
         <div class="modal-footer">
             <button class="btn btn-primary" ng-click="ok()">OK</button>

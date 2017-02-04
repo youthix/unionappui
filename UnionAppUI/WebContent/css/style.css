@@ -4098,3 +4098,6 @@ a.btn.btn-default.add{
 .btn-default[disabled]{
     background-color: #1b4481;
 }
+.cursor-pointer{
+    cursor: pointer;
+}

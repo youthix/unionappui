@@ -961,7 +961,9 @@ $scope.deleteContact = function (email,contactIndex,$event) {
 app.controller('newCategoryController',['$scope','$location','services','constant','dataSharingService','$rootScope','$route', function ($scope,$location,services,constant,dataSharingService,$rootScope,$route) {
    
 
-
+if ($rootScope.userName == undefined || $rootScope.userName == null) {
+         $location.path('/login');
+    }
 
    $scope.MeetingDashboard = function(){
        

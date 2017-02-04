@@ -5,7 +5,7 @@
   },
   {
     "key":"Submit",
-    "value":"Indsend"
+    "value":"Send"
   },
   {
     "key":"Enter Your Email ID",
@@ -472,8 +472,20 @@
    "value": "Skift bruger rolle"
  },
  {
-   "key": "Are you sure you want to convert",
-   "value": "Er du sikker på du vil konvertere"
+   "key": "Are you sure you want to",
+   "value": "Er du sikker på at du vil"
+ },
+ {
+   "key": "give",
+   "value": "giv"
+ },
+ {
+   "key": "remove",
+   "value": "fjerne"
+ },
+ {
+   "key": "administrator access?",
+   "value": "adgang som administrator?"
  },
  {
    "key": "New Activity",

@@ -114,6 +114,7 @@
       </div>
       </form>
 				<div class="col-md-12 spacer-20"></div>
+        <form name="contactProfileForm">
 				<table data-sortable="" width="500" class="table" data-sortable-initialized="true">
 				  <!-- <thead>
 					 <tr>
@@ -121,22 +122,22 @@
 					 </tr>
 				  </thead> -->
 				  <tbody>
-					 <tr>
+					 <!-- <tr>
 						<td>{{"User Name"|i18n}}</td>
-						<td><input type="text" ng-model="profileData.usNa" ng-disabled="disabled"></td>
-					 </tr>
+						<td><input type="text" ng-model="profileData.usNa" ng-required="true" ng-disabled="disabled"></td>
+					 </tr> -->
 					 <tr>
 						<td>{{"First Name"|i18n}}</td>
-						<td><input type="text" ng-model="profileData.fn" ng-disabled="disabled"></td>
+						<td><input type="text" ng-model="profileData.fn" ng-required="true" ng-disabled="disabled"></td>
 					 </tr>
 					 <tr>
 						<td>{{"Last Name"|i18n}}</td>
-						<td><input type="text" ng-model="profileData.ln" ng-disabled="disabled"></td>
+						<td><input type="text" ng-model="profileData.ln" ng-required="true" ng-disabled="disabled"></td>
 					 </tr>
 					 <tr>
 						<td>{{"Gender"|i18n}}</td>
 						<td>
-                        	<select ng-model="profileData.gen" ng-disabled="disabled">
+                        	<select ng-model="profileData.gen" ng-required="true" ng-disabled="disabled">
                             <option value="M" ng-selected="profileData.gen=='M'">{{"Male"|i18n}}</option>
                             <option value="F" ng-selected="profileData.gen=='F'">{{"Female"|i18n}}</option>
                             </select>
@@ -144,19 +145,19 @@
 					 </tr>
 					 <tr>
 						<td>{{"Address"|i18n}}</td>
-						<td><input type="text" ng-model="profileData.add" ng-disabled="disabled"></td>
+						<td><input type="text" ng-model="profileData.add" ng-required="true" ng-disabled="disabled"></td>
 					 </tr>
 					 <tr>
 						<td>{{"City"|i18n}}</td>
-						<td><input type="text" ng-model="profileData.city" ng-disabled="disabled"></td>
+						<td><input type="text" ng-model="profileData.city" ng-required="true" ng-disabled="disabled"></td>
 					 </tr>
 					 <tr>
 						<td>{{"Zip Code"|i18n}}</td>
-						<td><input type="text" ng-model="profileData.zipcode" ng-disabled="disabled"></td>
+						<td><input type="text" ng-model="profileData.zipcode" ng-required="true" ng-disabled="disabled"></td>
 					 </tr>
 					 <tr>
 						<td>{{"Age"|i18n}}</td>
-						<td><input type="text" ng-model="profileData.age" ng-disabled="disabled"></td>
+						<td><input type="text" ng-model="profileData.age" ng-required="true" ng-disabled="disabled"></td>
 					 </tr>
 					 <!--<tr>
 						<td>Post Nr.</td>
@@ -168,26 +169,27 @@
 					 </tr> -->
 					 <tr>
 						<td>{{"Tel Nr."|i18n}}</td>
-						<td><input type="text" ng-model="profileData.conNu" ng-disabled="disabled"></td>
+						<td><input type="text" ng-model="profileData.conNu" ng-required="true" ng-disabled="disabled"></td>
 					 </tr>
 					 <tr>
 						<td>{{"Email"|i18n}}</td>
-						<td><input type="text" ng-model="profileData.emId" ng-disabled="disabled"></td>
+						<td><input type="text" ng-model="profileData.emId" ng-required="true" ng-disabled="disabled"></td>
 					 </tr>
                      <tr>
 						<td>{{"Job Title"|i18n}}</td>
-						<td><input type="text" ng-model="profileData.title" ng-disabled="disabled"></td>
+						<td><input type="text" ng-model="profileData.title" ng-required="true" ng-disabled="disabled"></td>
 					 </tr>
                      <tr>
 						<td>{{"Category"|i18n}}</td>
 						<td>
-                        	<select ng-model="profileData.category" ng-disabled="disabled">
+                        	<select ng-model="profileData.category" ng-required="true" ng-disabled="disabled">
                             <option value="{{cat.catname}}" ng-selected="profileData.category==cat.catname" ng-repeat="cat in ContactListCategory" >{{cat.catname}}</option>
                             </select>
                         </td>
 					 </tr>
 				  </tbody>
 			   </table>
+
 			</div>
 			
 			<div class="col-md-12 spacer-20"></div>
@@ -206,9 +208,10 @@
           <div class="button-wrap">
           <button type="button" class="btn btn-primary" ng-click="contactcancel(profileData.category)">{{"Cancel"|i18n}}</button>
            <button type="submit" class="btn btn-default" ng-click="edit()" ng-show="showButton">{{"Edit"|i18n}}</button>
-           <button type="submit" class="btn btn-primary" ng-click="save(profileData)" ng-hide="showButton">{{"Save"|i18n}}</button>
+           <button type="submit" class="btn btn-primary" ng-disabled="contactProfileForm.$invalid" ng-click="save(profileData)" ng-hide="showButton">{{"Save"|i18n}}</button>
         </div>
       </div>
+      </form>
           </div>
           <!-- End div .box-info --> 
         </div>
