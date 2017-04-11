@@ -56,7 +56,7 @@ $scope.fotterTitle = constant.footer_title;
         $location.path('/ideas')
     };
 
-var serviceUrl = "http://sample-env.bmhmhxifym.ap-south-1.elasticbeanstalk.com/rest/service";
+var serviceUrl = "http://ec2-35-154-221-255.ap-south-1.compute.amazonaws.com:8080/UnionApp-Services/service";
 
 
       amrListCall = function(){
@@ -154,7 +154,7 @@ var serviceUrl = "http://sample-env.bmhmhxifym.ap-south-1.elasticbeanstalk.com/r
 					}
 				};
 									
-    var serviceUrl = "http://sample-env.bmhmhxifym.ap-south-1.elasticbeanstalk.com/rest/service";
+    var serviceUrl = "http://185.134.30.228:8080/UnionApps/rest/service";
 	var updaterequest={
 			  method:'POST',
 			  data:requestObject,
@@ -206,7 +206,7 @@ var serviceUrl = "http://sample-env.bmhmhxifym.ap-south-1.elasticbeanstalk.com/r
                 }
             };
                                 
-    var serviceUrl = "http://sample-env.bmhmhxifym.ap-south-1.elasticbeanstalk.com/rest/service";
+    var serviceUrl = "http://185.134.30.228:8080/UnionApps/rest/service";
 	var updaterequest={
 			  method:'POST',
 			  data:requestObject,
@@ -327,7 +327,7 @@ $scope.saveAmr = function(newAmr){
       "status": "offline"
    }]}
 };
-var serviceUrl = "http://sample-env.bmhmhxifym.ap-south-1.elasticbeanstalk.com/rest/service";
+var serviceUrl = "http://185.134.30.228:8080/UnionApps/rest/service";
 var request={
 		  method:'POST',
 		  data:requestObject,
@@ -441,7 +441,7 @@ app.controller('amrEditController',['$scope','$location','services','constant','
                     ]
                 }
             };
-var serviceUrl = "http://sample-env.bmhmhxifym.ap-south-1.elasticbeanstalk.com/rest/service";
+var serviceUrl = "http://185.134.30.228:8080/UnionApps/rest/service";
 var request={
 		  method:'POST',
 		  data:requestObject,

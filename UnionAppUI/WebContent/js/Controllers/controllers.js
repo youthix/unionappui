@@ -246,7 +246,7 @@ app.controller('dashBoardController',['$scope','$location','$rootScope','dataSha
 	  };
 
     $scope.aprroveUser = function(userData){
-       userData.status = "a";
+       userData.status = "approved";
         dataSharingService.addEditData(userData);
         $location.path('/miniContactProfile').search({approveUser:true});
     };
@@ -258,7 +258,7 @@ app.controller('dashBoardController',['$scope','$location','$rootScope','dataSha
        "userListObj": {"ul": [   {
         "usNa": userData.emId,
         "pwd": "xxx",
-        "status": "delete"
+        "status": "notapproved"
       }]},
       "criteria":    {
         "criteria": "TRUE",
